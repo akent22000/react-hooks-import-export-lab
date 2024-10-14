@@ -1,9 +1,8 @@
 import React from "react";
+import { trees } from './App';
 
-import { username, city } from "../data/user.js";
+function Home({ username, city }) {
 
-
-function Home() {
   return (
     <div id="home">
       <h1>
@@ -13,4 +12,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Home

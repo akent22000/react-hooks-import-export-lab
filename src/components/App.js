@@ -1,14 +1,29 @@
 import React from "react";
-import NavBar from "./NavBar";
-import Home from "./Home";
-import About from "./About";
+import About from './About';
+import Home from './Home';
+import NavBar from './NavBar';
+// import userData from '../data/user';
+import { username, city, image } from '../data/user';
 
 function App() {
+
   return (
     <div>
-      <NavBar />
-      <Home />
-      <About />
+      <NavBar
+        username={username}
+        city={city}
+        image={image}
+      />
+      <Home
+        username={username}
+        city={city}
+        image={image}
+      />
+      <About
+        username={username}
+        city={city}
+        image={image}
+      />
     </div>
   );
 }
